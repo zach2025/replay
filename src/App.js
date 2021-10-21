@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Playcard from './Playcard';
+import NavBar from './NavBar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>
+        Replay WOOOT
+      </h1>
+      <NavBar />
+      <Playcard song="Live From Space" artist="Mac Miller" cover="live-from-space.jpeg" />
+      <Playcard song="I Wonder" artist="Kanye West" cover="graduation.jpeg" />
+      <Playcard song="Bohemian Rhapsody" artist="Queen" cover="queen-ii.jpeg" />
     </div>
   );
 }
