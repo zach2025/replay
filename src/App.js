@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <h1>
-        Replay WOOOT
+        Replay
       </h1>
       <NavBar />
       <Playcard song="Live From Space" artist="Mac Miller" cover="live-from-space.jpeg" />
