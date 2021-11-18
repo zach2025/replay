@@ -1,8 +1,9 @@
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
-import { List, ListItem, ListItemButton, ListItemText, Grid, Toolbar, Divider, Paper } from '@mui/material';
+import { List, ListItem, ListItemButton, ListItemText, Grid, Divider } from '@mui/material';
+// import { Paper } from '@mui/material';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import ExplicitIcon from '@mui/icons-material/Explicit';
+// import ExplicitIcon from '@mui/icons-material/Explicit';
 import HoverRating from '../atoms/HoverRating';
 
 
@@ -19,12 +20,12 @@ const HoverSelect = styled(ListItemButton)({
     }
 })
 
-const Item = styled(Paper)(({ theme }) => ({
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-}));
+// const Item = styled(Paper)(({ theme }) => ({
+//     ...theme.typography.body2,
+//     padding: theme.spacing(1),
+//     textAlign: 'center',
+//     color: theme.palette.text.secondary,
+// }));
 
 function Tracklist({albumset}) {
     const fullalbum = albumset.albums
