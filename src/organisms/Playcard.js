@@ -1,19 +1,13 @@
 import * as React from 'react';
 import { useState } from 'react';
 import { useTheme } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import IconButton from '@mui/material/IconButton';
-import PauseRounded from '@mui/icons-material/PauseRounded';
-import PlayArrowRounded from '@mui/icons-material/PlayArrowRounded';
-import FastForwardRounded from '@mui/icons-material/FastForwardRounded';
-import FastRewindRounded from '@mui/icons-material/FastRewindRounded';
+import {Box, Card, IconButton} from '@mui/material';
+import {PauseRounded, PlayArrowRounded, FastForwardRounded, FastRewindRounded} from '@mui/icons-material';
 import HoverRating from '../atoms/HoverRating';
 import CardImage from '../atoms/CardImage';
 import SongAndArtist from '../atoms/SongAndArtist';
 import TimeSlider from '../atoms/TimeSlider';
 import VolumeSlider from '../atoms/VolumeSlider';
-import { CardMedia } from '@mui/material';
 
 
 function Playcard({albumset}) {
