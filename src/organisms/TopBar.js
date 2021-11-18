@@ -3,12 +3,13 @@ import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
+import { Avatar } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
 
 
-const Search = styled('div')(({ theme }) => ({
+const Search = styled('div') (({ theme }) => ({
     position: 'relative',
     borderRadius: theme.shape.borderRadius,
     backgroundColor: alpha(theme.palette.common.white, 0.15),
@@ -55,9 +56,18 @@ const Search = styled('div')(({ theme }) => ({
         <Box sx={{ display: 'flex' }}>
             <AppBar
                 position="fixed"
-                sx={{ width: `calc(100% - 170px)`, ml: `170px`, backgroundColor: "#181818" }}
+                sx={{ width: `calc(100% - 170px)`, ml: `170px`, backgroundColor: "black" }}
             >
-                <Toolbar>
+              <Toolbar>
+                <Search>
+                    <SearchIconWrapper>
+                      <SearchIcon />
+                    </SearchIconWrapper>
+                    <StyledInputBase
+                    placeholder="Search…"
+                    inputProps={{ 'aria-label': 'search' }}
+                    />
+                </Search>
                 <Typography
                     variant="h4"
                     noWrap
@@ -66,16 +76,8 @@ const Search = styled('div')(({ theme }) => ({
                 >
                     Replay
                 </Typography>
-                <Search>
-                    <SearchIconWrapper>
-                    <SearchIcon />
-                    </SearchIconWrapper>
-                    <StyledInputBase
-                    placeholder="Search…"
-                    inputProps={{ 'aria-label': 'search' }}
-                    />
-                </Search>
-                </Toolbar>
+                <Avatar />
+              </Toolbar>
             </AppBar>
         </Box>
     );

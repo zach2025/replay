@@ -1,5 +1,6 @@
 body {
   background-color: #2a2d33;
+  background: linear-gradient( #2a2d33, black);
   color: white;
   padding: 0px;
   font-family: Arial;
