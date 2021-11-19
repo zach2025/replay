@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+# Replay
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
+Replay is a platform to review and share ratings and opinions on songs, albums, and artists.
 
-## Available Scripts
+## Current Development
+Currently, Replay is being built. The foundations have been laid but are not completed just yet. Work on both the front-end and back-end are needed and thus many features/long-term goals have not been accomplished.
 
-In the project directory, you can run:
+## Long Term Goals
+Designed to be a social application, the ability to share your ratings within and outside of Replay ois key. Within Replay there will be a dedicated Feed tab in which everyone you follow, whether that be your friend or an artist, will have the ratings they most recently made shared. Think of it like giving a review on Amazon, once you publish it it is public to the world. But in this case it will only be directly shared to everyone who follows you, though your ratings are still public on your profile. For sharing your reviews outside of Replay, A link to the track or album you reviewed with a preview of your review will be shareable, taking the person you shared it with directly to your review.
 
-### `npm start`
+Replay will have integrated music listening with a connected Spotify and/or Apple Music account. With this, Replay will be able to read certain songs you have listened to recently and suggest not only which song or album you should rate, but as well as a rating based on the number of plays over a set period of time and replays in a listening session. In the far future partnerships with services like Spotify, Apple Music, or even others such as YouTube Music, Pandora, and more can make this transfer of information a lot easier.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Using the numerical values of reviews, the amount of review traffic on a specific album/song, and data from Spotify, a Charts tab will be available tabulating the Top 100 songs given different parameters, such as genres, regions, ect. (i.e. Top 100 of R&B, Top 20 of USA)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+For artists, you will have a special artist-facing version of Replay you will have access to which will allow you to see certain statistics, such as the average rating of your newest album, most shared reviews of one of your songs, and much more information that is already public without the artist-facing version of Replay, but now in a easily digestible format.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Features
+- Rating & Reviewing System
+- Database to store Ratings & Reviews
+- Display Reviews & Ratings publicly on all Profiles (Profiles are linked to Service Accounts but are in a seperate database to store the Ratings & Reviews)
+- Display calculated most popular songs and albums based off of Service APIs, Ratings, & Reviews
+- Integrated Music Player
+- Spotify/Apple Music API (Database and Service Account)
